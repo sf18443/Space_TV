@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+		function goBack() {
+			window.location = "javascript:history.go(-1)";
+		}
+		function goForward() {
+			window.location = "javascript:history.go(1)";
+		}
+		function goHome() {
+			window.location = "index.htm";
+		}
+	</script>
+	</head>
+<div>
+<img src="images/navmsl.png"  style="z-index:3; position: absolute; top:12px; left:20px;"</img>
+
+
+	
+<div  style="z-index:1000;  width:1024px; height: 600px;" >
+<img src="images/actionBar/backhome.png" onclick="goBack()" style="z-index:4;height:40px; width:40px; position: absolute; top:12px; left: 200px;"</img>
+<img src="images/indexgrid_dark_theme.png" onClick="window.location.href='mslimages2.htm'" style="z-index:4; height:40px; width:40px; position: absolute; top:12px; left: 120px;"</img>
+<img src="images/actionBar/close.png" onClick="window.location.href='index.htm'" style="z-index:4; height:40px; width:40px; position: absolute; top:12px; left: 40px;"</img>
+		<iframe id="mslframe" width="1024px" height="600px" src="http://opensourcebb.com/mslgalleries" scrolling="yes" frameborder="0" background="black"> </iframe>
+		
+		
+</div>
+</div>
+</html>

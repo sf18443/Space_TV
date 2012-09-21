@@ -1,0 +1,66 @@
+<html>
+<head>
+
+<style>
+.titlec {
+display:block;
+  font-size: large;
+  color:white;
+  margin-left:5px;
+  font-family:helvetica;
+}
+ul.videos li {
+  float: left;
+  width: 20.5em;
+  margin-bottom: 1em;
+}
+ul.videos
+{
+  margin-bottom: 1em;
+  padding-left : 0em;
+  margin-left: 0em;
+  list-style: none;
+
+}
+</style>
+<script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+function loadVideo(playerUrl, autoplay) {
+  swfobject.embedSWF(
+      playerUrl + '&enablejsapi=1&modestbranding=1&rel=0&theme=light' + 
+      (autoplay?0:0), 'player', '100%', '85%', '9.0.0', false, 
+      false, {allowfullscreen: 'true'});
+}
+
+function showMyVideos2(data) {
+  var feed = data.feed;
+  var entries = feed.entry || [];
+  var html = ['<div style="height:26px; text-align:center; padding-top:0; font-family:helvetica; font-size:x-large; color:white; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));"><p>Recent NASA Videos</p></div> <div style="background-image: -webkit-gradient(linear, center top, center bottom, from(#323232), to(#272727)); height:470px; overflow: auto;"> <ul class="videos">'];
+  for (var i = 0; i < entries.length; i++) {
+    var entry = entries[i];
+    var title = entry.title.$t.substr(0);
+    var thumbnailUrl = entries[i].media$group.media$thumbnail[0].url;
+    var playerUrl = entries[i].media$group.media$content[0].url;
+    html.push('<li onclick="loadVideo(\'', playerUrl, '\', true)">',
+              '<span class="titlec">', title, '</span><br /><img src="', 
+              thumbnailUrl, '" style="padding-left:5px;" width="345" height="250"/>', '</span></li>');
+  }
+  html.push('</ul><br style="clear: left;"/></div>');
+  document.getElementById('videos2').innerHTML = html.join('');
+  if (entries.length > 0) {
+    loadVideo(entries[0].media$group.media$content[0].url, false);
+  }
+}
+</script>
+</head>
+<body style="height=100%">
+<center><div id="playerContainer" style="background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(8%,#2b2b2b), color-stop(8%,#2c2c2c), color-stop(8%,#000000), color-stop(50%,#000000), color-stop(85%,#111111), color-stop(85%,#050505), color-stop(86%,#232323), color-stop(100%,#383838));  padding-top:58px; width: 64%; height: 460px; float: left;">
+    <object id="player"></object>
+</div></center>
+<div id="videos2" style="background-image: -webkit-gradient(linear, center top, center bottom, from(#323232), to(#272727)); float:right; height:520px; width:35%;"></div>
+<script 
+    type="text/javascript" 
+    src="http://gdata.youtube.com/feeds/users/NASAtelevision/uploads?alt=json-in-script&callback=showMyVideos2&max-results=30">
+</script>
+</body>
+</html>

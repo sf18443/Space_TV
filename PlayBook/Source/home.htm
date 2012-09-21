@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<!--
+* Copyright 2010-2011 Research In Motion Limited.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+-->
+
+<div data-bb-type="screen" data-bb-effect="fade" style="background:black;">
+	<script src="js/actionBar.js"></script>
+
+	<div id="homeland">
+	<img src="images/homesplash.png"></img>
+</div>
+
+	
+	
+	
+	
+	<div id="tabs" style="display:none">
+		
+			<div><object id="foo" name="foo" type="text/html" height="100%" width="100%" data="http://opensourcebb.com/nasatvapp/nasatvappschedule.htm"></object></div>	
+		
+	</div>
+	
+	
+	
+
+
+	<div data-bb-type="action-bar">
+		
+		<!--<div data-bb-type="action" data-bb-style="tab" data-bb-selected="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('homeland');">Home</div>-->
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/actionBar/live.png" onclick="bb.pushScreen('livefeeds.htm', 'livefeeds');">Watch Live</div>
+		
+		<div data-bb-type="action" data-bb-style="button"  data-bb-img="images/actionBar/ondemand.png" onclick="bb.pushScreen('yt.htm', 'yt');">On-Demand</div>
+		<div data-bb-type="action" data-bb-style="button"  data-bb-img="images/actionBar/msl.png" onClick="window.location.href='mslimages2.htm'">Curiosity Images</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/actionBar/schedule.png" onclick="showTab('tabs');">Schedule</div>
+		<div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="images/actionBar/link.png" onclick="getHLink()">Visit NASA website</div>
+		<!--<div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="alert('You clicked Extra Action');">Extra Action</div>-->
+		<div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="images/actionBar/link.png" onclick="getGLink()">MSL Images in Browser</div>
+			
+		<div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-pin="true" data-bb-img="images/actionBar/copyright.png" onclick="getALink()">Copyright 2012, OSBBx</div>
+	</div>
+</div>
+
+<!--<div data-bb-type="screen" data-bb-effect="fade" data-bb-scroll-effect="off">
+	
+	<div id="watch" >
+		
+			hell1
+		
+	</div>
+	<div id="schedule" style="display:none">
+		
+			Hello 2
+		
+	</div>
+	<div id="ondemand" style="display:none">
+		
+			HELLO3
+		
+	</div>
+	
+	<div data-bb-type="action-bar">
+	<div data-bb-type="action" data-bb-style="tab" data-bb-selected="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('watch');">Watch Now</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('ondemand');">Programming Schedule</div>
+		<div data-bb-type="action"  data-bb-style="tab" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('schedule');">On-Demand</div>	
+	
+	
+	
+	
+	</div>
+</div>-->

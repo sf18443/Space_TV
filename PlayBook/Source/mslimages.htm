@@ -1,0 +1,31 @@
+<div style="background:black;" data-bb-type="screen" data-bb-effect="fade">
+
+<div style="height:55px;">
+<img src="images/navmsl.png"  style="z-index:3; position: absolute; top:0px; left:0px;"</img>
+
+</div>
+	
+<div  style="z-index:1; margin-top:-60px; width:100%; height: 100%;" >
+<img src="images/actionBar/backhome.png" onclick="goBack()" style="z-index:4;height:40px; width:40px; position: absolute; top:5px; left: 110px;"</img>
+<img src="images/indexgrid_dark_theme.png" onclick="bb.pushScreen('mslimages.htm', 'msl');" style="z-index:4; height:40px; width:40px; position: absolute; top:5px; left: 25px;"</img>
+		<iframe id="mslframe" width="100%" height="100%" src="http://opensourcebb.com/mslgalleries" scrolling="yes" frameborder="0" background="black"> </iframe>
+		
+		
+</div>
+
+
+
+<div data-bb-type="action-bar">
+		
+		<!--<div data-bb-type="action" data-bb-style="tab" data-bb-selected="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('homeland');">Home</div>-->
+		<div data-bb-type="action" data-bb-style="button"  data-bb-img="images/actionBar/backhome.png" onclick="bb.pushScreen('home.htm', 'home');">Back Home</div>
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/actionBar/live.png" onclick="bb.pushScreen('livefeeds.htm', 'livefeeds');">Watch Live</div>
+		
+		<div data-bb-type="action" data-bb-style="button"  data-bb-img="images/actionBar/ondemand.png" onclick="bb.pushScreen('yt.htm', 'yt');">On-Demand</div>
+		
+		<div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="images/actionBar/link.png" onclick="getHLink()">Visit NASA website</div>
+		<!--<div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="alert('You clicked Extra Action');">Extra Action</div>-->
+			
+		<div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-pin="true" data-bb-img="images/actionBar/copyright.png" onclick="getALink()">Copyright 2012, OSBBx</div>
+	</div>
+</div>

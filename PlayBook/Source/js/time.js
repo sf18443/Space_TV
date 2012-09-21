@@ -1,0 +1,1 @@
+  setTimeout('document.getElementById("myDiv2").style.display="none"', 10000);  // 10 seconds

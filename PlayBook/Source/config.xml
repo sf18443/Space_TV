@@ -1,0 +1,31 @@
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="0.9.5.8" id="nasatvappworldpb">
+  <name>NASA TV</name>
+  <description>Nasa TV unofficial</description>
+  <author>J Duke</author>
+ 
+ 
+
+  <rim:orientation mode="landscape" />
+  <rim:loadingScreen backgroundColor="#000000"
+     backgroundImage="images/loading.png"
+     onFirstLaunch="true"
+     onRemotePageLoad="true">
+   <rim:transitionEffect type="fadeIn" direction="left" />
+</rim:loadingScreen>
+
+<rim:cache disableAllCache="true" />
+  
+  
+  <icon src="images/icon.png"/>
+  <content src="index.htm"/>
+
+  <access uri="*" subdomains="true"> </access>
+	  <feature id="blackberry.app.event" required="true" version="1.0.0"/>
+	  <feature id="blackberry.app" required="true" version="1.0.0"/>
+	  <feature id="blackberry.invoke" required="true" version="1.0.0"/>
+	  <feature id="blackberry.system" required="true" version="1.0.0"/>
+ 
+  
+</widget>

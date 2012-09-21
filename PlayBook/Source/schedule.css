@@ -1,0 +1,195 @@
+/**************************** NASA TV Schedule Start ******************************/
+.dropdown_channels .dropdown_gray_container .dropdown_main_container {width:215px; height:22px; position:relative; float:left; display:block;margin-top:10px;
+						   background-image:url('/templateimages/redesign/modules/dropdown_select/greyselect_nasatv_allchannels.png') ; text-align: left; line-height:19px;border:0px solid #00FF00;padding-left:6px; }
+
+.dropdown_channels .dropdown_btn { width:15px; height:15px; float:left; display:none; border:1px solid; cursor:pointer; }
+
+.dropdown_channels .dropdown_contents { position:absolute; z-index:200; top:20px; left:0px; width:221px; height:83px; background-color:#005dac; }
+.dropdown_channels .dropdown_gray_container .dropdown_contents { background-color:#737373; }
+
+
+.dropdown_channels .dropdown_contents_inner { margin: 0 0 0 1px; width:203px; height:80px; overflow:hidden; background-color:#1d1d1d; border:1px solid #000; }
+
+
+.dropdown_channels .dropdown_label { height:18px; line-height:18px; text-align:left; cursor:pointer; }
+.dropdown_channels .dropdown_item { padding: 0 0 0 4px; height:16px; line-height:16px; font-size:11px; cursor:pointer; text-align:left; }
+.dropdown_channels .dropdown_item_over { text-decoration:underline; background-color:#161616; }
+
+.dropdown_channels .dropdown_gray_container .dropdown_contents .track { position:absolute; top:19px; width:14px;right:1px;height:55px;}
+.dropdown_channels .dropdown_gray_container .dropdown_contents .track_up,
+.dropdown_channels .dropdown_gray_container .dropdown_contents .track_down { position: absolute; right: 1px; width: 14px; height: 19px; cursor:pointer; }
+.dropdown_channels .dropdown_gray_container .dropdown_contents .track_up { top: 0px; }
+.dropdown_channels .dropdown_gray_container .dropdown_contents .track_down { top: 95px; }
+.dropdown_channels .dropdown_gray_container .dropdown_short_container .dropdown_contents .track_down { top: 60px; }
+
+
+
+
+.dropdown_time .dropdown_gray_container .dropdown_main_container {margin:10px 5px 0 2px; width:80px; height:22px; float:left; display:block;
+						   background-image:url('/templateimages/redesign/modules/dropdown_select/greyselect_nasatv_time.png') ; text-align: left; line-height:19px;border:0px solid #00FF00 }
+
+.dropdown_time .dropdown_btn { width:15px; height:15px; float:left; display:none; border:1px solid; cursor:pointer; }
+
+.dropdown_time .dropdown_contents { position:absolute; z-index:200; top:20px; left:0px; width:88px; height:114px; background-color:#005dac; }
+.dropdown_time .dropdown_gray_container .dropdown_contents { background-color:#737373; }
+
+
+.dropdown_time .dropdown_contents_inner {background-color:#1D1D1D;border:1px solid #000000;height:111px;margin:0 0 0 1px;overflow:hidden;width:69px;}
+
+.dropdown_time .dropdown_label { height:18px; line-height:18px; text-align:left; cursor:pointer; }
+.dropdown_time .dropdown_item { padding: 0 0 0 4px; height:16px; line-height:16px; font-size:11px; cursor:pointer; text-align:left;color:#ffffff }
+.dropdown_time .dropdown_item_over { text-decoration:underline; background-color:#161616; }
+
+.dropdown_time .dropdown_gray_container .dropdown_contents .track { position:absolute; top:19px; width:14px;right:1px;height:75px;}
+.dropdown_time .dropdown_gray_container .dropdown_contents .track_up,
+.dropdown_time .dropdown_gray_container .dropdown_contents .track_down { position: absolute; right: 1px; width: 14px; height: 19px; cursor:pointer; }
+.dropdown_time .dropdown_gray_container .dropdown_contents .track_up { top: 0px; }
+.dropdown_time .dropdown_gray_container .dropdown_contents .track_down { top: 95px; }
+.dropdown_time .dropdown_gray_container .dropdown_short_container .dropdown_contents .track_down { top: 60px; }
+
+.dropdown_date {margin:10px 0px 0 5px; width:220px; height:22px; float:left; display:block;
+						   background-image:url('/templateimages/redesign/modules/dropdown_select/greyselect_nasatv_date.png') ; text-align: left; line-height:19px;border:0px solid #00FF00 }
+.dropdown_time {margin:10px 5px 0 5px;  }
+
+.dropdown_channels .dropdown_channel_filter{padding-left:8px;color:#000000;width:auto;margin:0 0 0 10px}
+.dropdown_date .dropdown_date_filter {padding-left:8px;color:#000000;float:left;width:185px;}
+.dropdown_calender_filter{margin: 2px 0pt 0pt 23px; padding-left: 2px; float: left; width: 16px;height:22px}
+.dropdown_time .dropdown_time_filter {padding-left:3px;color:#000000;float:left}
+.datetimechannel_filter {margin:0 0px 0 175px;width:682px;height:40px}
+.datetimechannel_filter  .dropdown_label {color:#FFFFFF;font-size:12px;}
+.dropdown_label_date{height:18px; line-height:18px; text-align:left; font-size:12px;width:210px;color:#FFFFFF;font-family:Arial;}
+
+#dropdown_channel_filter select {display:none;}
+
+#dropdown_time_filter select {display:none;}
+
+
+.nasatvloaderimage {border:none;margin-left:450px;margin-top:150px;}
+
+
+.nasatv_schedule{background-color:#545454;height:525px;border:1px solid #545454;font-size:12px}
+.nasatv_schedule table {border-collapse:collapse;}
+.nasatv_filter { background-color:#0E0E0E;height:90px;border:1px solid #545454;width:950px}
+
+.nasatv_filter .nasatv_note{float: right; height: 15px; margin-right: 40px; font-size: 11px;}
+
+.backward_time {border-left:1px solid #000;right:0px; background: url(/templateimages/redesign/modules/calendar/tableNav_backward_gray) ; }		
+/*.nasatv_schedule_710{height:645px ;background-color:#545454;display:block;float:left;width:950px;} */
+/*.nasatv_schedule_710{height:715px ;background-color:#545454;display:block;float:left;width:950px;} */
+.nasatv_schedule_710{height:605px ;background-color:#545454;display:block;float:left;width:950px;}
+
+.timer_table {background-color:#0E0E0E;border-bottom:1px solid #545454; height:30px;width:950px}
+.timer_table li#back_button{width:140px;border-right:1px solid #545454;padding-left:0px;float:left}
+.timer_table li#next_button{padding-left:0px;float:right;width:0px}
+.timer_table li{width:265px;padding:0px;border-right:1px solid #545454;}
+.timer_table li{width:265px;padding:0px;border-right:1px solid #545454;}
+.timer_table li{padding-left:3px;text-align:none;float:left;height:30px;line-height:30px}
+
+
+.back_button {background:transparent url(/templateimages/redesign/modules/calendar/tableNav_backward_gray.gif) no-repeat scroll 0 0;border:medium none;float:left;height:27px;left:3px;position:absolute;
+top:46.1%;width:39px;}
+.back_button img {border:none;vertical-align:middle;}
+
+.spacer_column {width:80px;text-align:right}
+.timer_column{width:264px;text-align:left;vertical-align:middle;padding-left:3px;font-size:12px;}
+
+.next_button {background:transparent url(/templateimages/redesign/modules/calendar/tableNav_forward_gray.gif) no-repeat scroll 0 0;border:medium none;float:left;height:27px;position:absolute;right:3px;
+top:46.1%;width:39px;}
+.next_button img {float:right;border:none}
+
+.channel_content {height:390px;width:950px;}
+
+
+
+ li.channel_info {border-right:1px solid #2E2E2E;padding:3px 0 !important;text-align:left;vertical-align:top;border-bottom:1px solid #2E2E2E !important;overflow:hidden;float: left; height: 117px;}
+.channel_info_div {height:110px;overflow:hidden}
+.channel_header{border-bottom:1px solid #2E2E2E !important;background-color:#0E0E0E;border-right:1px solid #2E2E2E !important;padding:3px 0 !important;text-align:center;vertical-align:middle;margin:auto; width: 139px; float: left; height: 117px;}
+.channel_header div.channel_header_div {padding-top:35px}
+.channel_text {padding:0 6px 4px !important;font-size:12px;text-align: left;}
+.channel_name {font-weight:bold;}		
+	
+
+
+.watch_now_button {font-size:10px;background:transparent url('/templateimages/redesign/global/watch_now_nasatv.gif') no-repeat scroll 0 0 ; width:80px; height:20px;text-align:center; line-height:19px;margin:5px auto auto auto;border:0 solid #00FF00;}
+
+.watch_now_button a {font-size:11px;}
+
+
+.nasatv_overlay_float { width:420px; }
+.nasatv_overlay_float #floatMessageTop { width:420px; }
+.nasatv_overlay_float #floatMessageBottom { width:420px; }
+
+
+.nasatv_overlay_float .floatType_bookmark_bottom { background:url(/templateimages/redesign/modules/overlay/bottom_cap_nasatv.png)  no-repeat scroll 0 0; }	
+.nasatv_overlay_float .floatType_bookmark_top { background:url(/templateimages/redesign/modules/overlay/top_cap_nasatv.png)  no-repeat scroll 0 0; }	
+.nasatv_overlay_float .rss_mynasa { margin: 0 0 0 0; }
+.nasatv_overlay_float .overlay_wide_right_ul { padding: 5px 0 0 0; }
+
+.nasatv_overlay_image {width:100px;float:left;margin:3px 15px 3px 0px}
+.nasatv_overlay_image img {border:1px solid #969696; }
+.nasatv_overlay_desc{width:300px;}
+
+
+
+.ui-datepicker-trigger {border:medium none;cursor:pointer;float:right;margin:3px 3px 0 0;}
+#ui-datepicker-div {z-index:2}
+
+input.nasatvsubmit, input.nasatvsubmit:hover {background:transparent url(/templateimages/redesign/global/nasatv_submit.gif) no-repeat scroll 0 0;border:0 solid #00FF00;display:block;float:left;height:22px;
+line-height:19px;margin:0;padding:0;width:70px;margin:10px 0 0 0px;cursor:pointer;
+}
+input.nasatvsubmit:hover {	background-position:0 -22px; }
+
+.channel_content table tr{width:100%}
+
+.nasa_tv_schedule_help{top:154px}
+
+th div{text-align:center}
+.nasatv_h5{width:350px;}
+
+.nasatv_schedule_day {background-color:#545454;border:1px solid #545454;height:460px;}
+
+.nasatv_schedule .channel_content table.nasatv_dayview{border-collapse:none;height:485px;}
+
+.nasatv_schedule .channel_content table.nasatv_dayview tr td table.dayview_head {height:30px;width:100%;border-bottom:1px solid #2E2E2E !important;}
+
+.nasatv_schedule .channel_content table.nasatv_dayview tr td table.dayview_head tr td.day_time_head{border-right:1px solid #2E2E2E !important;width:150px;font-weight:bold;padding-left:10px;background-color:#0E0E0E;}
+.nasatv_schedule .channel_content table.nasatv_dayview tr td table.dayview_head tr td.day_desc_head{height:40px;font-weight:bold;padding-left:10px}
+
+.nasatv_schedule .channel_content table.nasatv_dayview tr td table.dayview_head tr td.day_desc_head div.day_desc_div{margin:10px;width:760px}
+.nasatv_schedule .channel_content table.nasatv_dayview tr td table.dayview_head tr td.day_time_head div.day_desc_div{margin:10px;width:130px;}
+
+
+.nasatv_schedule .channel_content .nasatv_dayview div.dayview_div {height:485px;overflow-x:hidden;overflow-y:scroll;width:950px}
+.nasatv_schedule .channel_content .nasatv_dayview .dayview_div table tr.dayview_body_tr {border-bottom:1px solid #2E2E2E !important;height:40px}
+
+
+
+.nasatv_dayview .dayview_head tbody{height:30px}
+
+
+.nasatv_schedule .channel_content table.nasatv_dayview td{text-align:left;vertical-align:middle; padding:0px}
+
+.nasatv_schedule .nasatv_dayview .dayview_div table tbody tr.dayview_body_tr td.day_time{border-right:1px solid #2E2E2E !important;width:150px;height:40px;padding-left:10px;background-color:#0E0E0E;}
+.nasatv_schedule .nasatv_dayview .dayview_div table tbody tr.dayview_body_tr td.day_desc{height:40px;width:800px;padding-left:10px}
+.nasatv_schedule .nasatv_dayview .dayview_div table tbody tr.dayview_body_tr td.day_desc div.day_desc_div{margin:10px;width:760px}
+.nasatv_schedule .nasatv_dayview .dayview_div table tbody tr.dayview_body_tr td.day_time div.day_desc_div{margin:10px;width:130px;}
+
+.tvscroll {overflow-x:hidden;overflow-y:scroll;}
+
+.nasatv_schedule .channel_content .nasatv_dayview .dayview_div .dayview_image {float:left;margin:0px 15px 10px 0px;width:100px;border:none}
+.nasatv_schedule .channel_content .nasatv_dayview .dayview_div .dayview_image img {border:none}
+.nasatv_schedule .channel_content .nasatv_dayview .dayview_div .dayview_desc {padding-right:30px;width:600px;}
+.nasatv_schedule .channel_content .nasatv_dayview .dayview_div .dayview_desc .dayview_title {font-weight:bold}
+
+
+.skipprevevents{font-size:1px;line-height:1;position:absolute;left:-300px !important;width:100px;}
+
+.skipnextevents{font-size:1px;line-height:1;position:absolute;right:-300px !important;width:100px;}
+
+.channel_content table tr.skipallchannel{font-size:1px;line-height:1;position:absolute;right:-300px !important;width:10px;}
+
+.channel_content ul.channel_ul{width: 950px; float: left;}
+.nasatv_specialevents {float:left;margin-left:40px;height: 15px;font-size:11px}
+.day_view_list{font-size:11px;}
+
+/***************** NASA TV Schedule CSS  End*****************/

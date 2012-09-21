@@ -1,0 +1,39 @@
+<div style="background:black;" data-bb-type="screen" data-bb-effect="fade">
+<!--<div id="patience">
+<center><p>Please be patient as the video loads..</p></center>
+</div>-->
+
+
+
+
+
+<div style="width:100%; height: 100%;" >
+	
+		<!--<img src="images/wifi.png" style="position: absolute; top:35px; left: 920px;"></img>-->
+	<img style="position:absolute; z-index:1; right:58px; top:501px;" src="blocker.png"></img>
+	
+		
+		<center><iframe id="mainframe" width="100%" height="100%" src="http://www.ustream.tv/embed/6540154?wmode=direct" scrolling="no" frameborder="0" background="black">    </iframe></center>
+	
+
+		
+	</div>
+
+<div id="foo" data-bb-type="context-menu">
+		<div data-bb-type="action" data-bb-img="images/actionBar/wifi.png" onclick="bb.pushScreen('livefeeds.htm', 'livefeeds');">Fast (WiFi/LTE)</div>
+		<div data-bb-type="action" data-bb-img="images/actionBar/3g.png" onclick="bb.pushScreen('3gfeed.htm', '3g');">Normal (3G)</div>
+		<div data-bb-type="action" data-bb-img="images/actionBar/edge.png" onclick="bb.pushScreen('edgefeed.htm', 'edge');">Slow (Edge)</div>
+		
+	</div>
+
+
+
+<div data-bb-type="action-bar">
+
+<div data-bb-type="action" data-bb-style="button"  data-bb-img="images/actionBar/backhome.png" onclick="bb.pushScreen('home.htm', 'home');">Back Home</div>
+
+<div data-bb-type="action" data-bb-style="tab"  data-bb-selected="true" data-bb-img="images/actionBar/watching.png">Now On: Main Stream</div>
+<div data-bb-type="action" data-bb-style="tab"  data-bb-img="images/actionBar/iss.png" onclick="bb.pushScreen('issfeeds.htm', 'issfeed');">Switch to Live ISS Stream</div>
+<!--<div data-bb-type="action" data-bb-style="button"  data-bb-img="images/actionBar/connection.png" onclick="document.getElementById('foo').menu.peek({title:'Context Menu',description: 'Peek Menu',selected:this});">Set Connection Speed</div>-->
+
+</div>

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<!--
+* Copyright 2010-2011 Research In Motion Limited.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+-->
+<html> 
+	<head>
+		<meta name="x-blackberry-defaultHoverEffect" content="false" />
+		
+		<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,target-densitydpi=device-dpi" />
+		<link  rel="stylesheet" type="text/css" href="bbui-0.9.3.css"><link />
+		<script type="text/javascript" src="bbui-0.9.3.js"></script>
+		<script type="text/javascript">
+					
+			// For some fun I did some random color scheme generation :o)
+			var bb10HighlightColor,
+				randomNumber;
+			randomNumber=Math.floor(Math.random()*100);
+			if (randomNumber > 90) {
+				  bb10HighlightColor = '#d3b626';
+			} else if (randomNumber > 60) {
+				  bb10HighlightColor = '#d3b626';
+			} else if (randomNumber > 30) {
+				  bb10HighlightColor = '#d3b626';
+			} else {
+				bb10HighlightColor = '#d3b626';
+			}
+			
+			// You must call init on bbUI before any other code loads.  
+			// If you want default functionality simply dont pass any parameters.. bb.init();
+			bb.init({bb10HighlightColor: bb10HighlightColor,
+					bb10ActionBarDark: true,
+					bb10ControlsDark: true,
+					bb10ListsDark: false,
+					bb10ForPlayBook: true,
+					// Fires "before" styling is applied and "before" the screen is inserted in the DOM
+					onscreenready: function(element, id) {
+										if (id == 'dataOnLoad') {
+											dataOnLoad_initialLoad(element);
+										} else if (id == 'masterDetail') {
+											masterDetail_initialLoad(element);
+										}
+										
+										// Remove all titles "except" input and pill buttons screen if running on BB10
+										if (bb.device.isBB10 && (id != 'input') && (id != 'pillButtons')) {
+											var titles = element.querySelectorAll('[data-bb-type=title]');
+											if (titles.length > 0) {
+												titles[0].parentNode.removeChild(titles[0]);
+											}
+										}
+										
+									},
+					// Fires "after" styling is applied and "after" the screen is inserted in the DOM
+					ondomready: function(element, id) {
+										if (id == 'dataOnTheFly') {
+											dataOnTheFly_initialLoad(element);
+										}
+									}
+					});
+		</script>
+		<script>
+		function goBack() {
+			window.location = "javascript:history.go(-1)";
+		}
+		function goForward() {
+			window.location = "javascript:history.go(1)";
+		}
+		function goHome() {
+			window.location = "index.htm";
+		}
+	</script>
+	
+	<script>
+	function loadNewPage(temp) {
+var req = new XMLHttpRequest();
+req.open("GET", temp, false);
+req.send(null);
+var page = req.responseText;
+document.getElementById("channels").innerHTML = page;
+}
+</script>
+<script type="text/javascript">
+//<![CDATA[
+// written by: Coothead
+function updateObjectIframe(which){
+document.getElementById('one').innerHTML = '<'+'object id="foo" name="foo" type="text/html" data="'+which.href+'"><\/object>';
+}
+
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+// written by: Coothead
+function updateObjectIframe(which){
+document.getElementById('one').innerHTML = '<'+'object id="fool" name="fool" type="text/html" data="'+which.href+'"><\/object>';
+}
+
+//]]>
+</script>
+<script>
+    setTimeout('document.getElementById("myDiv").style.display="none"', 4000);  // 4 seconds
+</script>
+<script>
+    setTimeout('document.getElementById("myDiv2").style.display="none"', 10000);  // 10 seconds
+</script>
+<script>
+function getALink()	
+{	 var args = new blackberry.invoke.BrowserArguments('http://x.opensourcebb.com'); 
+blackberry.invoke.invoke(blackberry.invoke.APP_BROWSER,args);	
+}
+function getHLink()	
+{	 var args = new blackberry.invoke.BrowserArguments('http://www.nasa.gov/'); 
+blackberry.invoke.invoke(blackberry.invoke.APP_BROWSER,args);	
+}
+function getGLink()	
+{	 var args = new blackberry.invoke.BrowserArguments('http://www.opensourcebb.com/mslgalleries'); 
+blackberry.invoke.invoke(blackberry.invoke.APP_BROWSER,args);	
+}
+
+</script>
+
+<script type="text/javascript">
+function goBack()
+  {
+  mslframe.window.history.back()
+  }
+</script>
+
+
+
+	</head>
+	<body onload="bb.pushScreen('home.htm', 'home');">
+	
+	</body>
+</html>
